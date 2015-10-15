@@ -11,7 +11,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class CustomerDAO extends IGenericsDAO<Customer> {
+
+public class CustomerDAO extends IGenericsJClientDAO<Customer> {
 
 	ObjectMapper mapper = new ObjectMapper();
 	public CustomerDAO() {

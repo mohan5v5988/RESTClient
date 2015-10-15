@@ -80,7 +80,7 @@ public class HomeController {
 		System.out.println("Done!!!!!!");
 	}
 	public static void main(String[] args) {
-		
+		cus();
 	}
 	
 	public static void type() {
@@ -89,10 +89,10 @@ public class HomeController {
 		obj.setType("QQ");
 		obj.setRate(210.5);
 		obj.setActive(true);
-//		List<Type> list = t.getAll();
-//		for (Type type : list) {
-//			System.out.println(type);
-//		}
+		List<Type> list = t.getAll();
+		for (Type type : list) {
+			System.out.println(type);
+		}
 //		System.out.println("==============================================================================");
 //		Type qq = new Type();
 //		qq.setType("QQ");
@@ -106,10 +106,10 @@ public class HomeController {
 	
 	public static void cus() {
 		CustomerDAO c = new CustomerDAO();
-//		List<Customer> list = c.getAll();
-//		for (Customer customer : list) {
-//			System.out.println(customer);
-//		}
+		List<Customer> list = c.getAll();
+		for (Customer customer : list) {
+			System.out.println(customer);
+		}
 //		System.out.println("==============================================================================");
 //		Customer obj = new Customer();
 //		obj.setNid("10");
